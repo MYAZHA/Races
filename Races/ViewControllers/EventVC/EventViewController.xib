@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EventViewController" customModule="Races" customModuleProvider="target">
+            <connections>
+                <outlet property="categoreLabel" destination="Mgt-ez-40P" id="5ND-ie-Q9R"/>
+                <outlet property="dateLabel" destination="TA9-Ij-TDe" id="BMM-V2-pAc"/>
+                <outlet property="descriptionTextView" destination="ydO-o8-1p4" id="pYB-ID-A6V"/>
+                <outlet property="imageView" destination="UK5-Ic-ASd" id="eoA-s9-rUS"/>
+                <outlet property="isFreeLabel" destination="gdz-AP-NFj" id="UqO-MK-Cmk"/>
+                <outlet property="view" destination="iN0-l3-epB" id="DG4-g3-imk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Описание:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmE-Jk-8rR">
+                    <rect key="frame" x="20" y="286.5" width="374" height="24"/>
+                    <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="categoryLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mgt-ez-40P">
+                    <rect key="frame" x="154" y="92" width="240" height="20"/>
+                    <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="20"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Категория:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKh-L0-2hI">
+                    <rect key="frame" x="154" y="64" width="240" height="20"/>
+                    <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="20"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дата:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEe-kb-KHr">
+                    <rect key="frame" x="154" y="142" width="240" height="20"/>
+                    <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="20"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dateLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TA9-Ij-TDe">
+                    <rect key="frame" x="154" y="170" width="240" height="20"/>
+                    <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="20"/>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydO-o8-1p4">
+                    <rect key="frame" x="20" y="318.5" width="374" height="443.5"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UK5-Ic-ASd">
+                    <rect key="frame" x="20" y="64" width="114" height="202.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="UK5-Ic-ASd" secondAttribute="height" multiplier="67:119" id="ziC-od-a6i"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Бесплатно:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8Z-NX-fgw">
+                    <rect key="frame" x="154" y="220" width="240" height="20"/>
+                    <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="20"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="isFreeLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdz-AP-NFj">
+                    <rect key="frame" x="154" y="248" width="240" height="20"/>
+                    <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="20"/>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Mgt-ez-40P" firstAttribute="top" secondItem="NKh-L0-2hI" secondAttribute="bottom" constant="8" id="0pi-wy-wP9"/>
+                <constraint firstItem="NKh-L0-2hI" firstAttribute="leading" secondItem="UK5-Ic-ASd" secondAttribute="trailing" constant="20" id="376-u8-tef"/>
+                <constraint firstItem="gdz-AP-NFj" firstAttribute="leading" secondItem="UK5-Ic-ASd" secondAttribute="trailing" constant="20" id="5SD-hN-9eG"/>
+                <constraint firstItem="s8Z-NX-fgw" firstAttribute="leading" secondItem="UK5-Ic-ASd" secondAttribute="trailing" constant="20" id="62k-B3-LW9"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Mgt-ez-40P" secondAttribute="trailing" constant="20" id="8he-FV-KKn"/>
+                <constraint firstItem="zEe-kb-KHr" firstAttribute="leading" secondItem="UK5-Ic-ASd" secondAttribute="trailing" constant="20" id="8jG-aR-H93"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="rmE-Jk-8rR" secondAttribute="trailing" constant="20" id="IOh-Ji-alA"/>
+                <constraint firstItem="gdz-AP-NFj" firstAttribute="top" secondItem="s8Z-NX-fgw" secondAttribute="bottom" constant="8" id="ItB-ht-E4F"/>
+                <constraint firstItem="TA9-Ij-TDe" firstAttribute="leading" secondItem="UK5-Ic-ASd" secondAttribute="trailing" constant="20" id="JO1-uT-oDn"/>
+                <constraint firstItem="s8Z-NX-fgw" firstAttribute="top" secondItem="TA9-Ij-TDe" secondAttribute="bottom" constant="30" id="Lm4-2r-Ns0"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="s8Z-NX-fgw" secondAttribute="trailing" constant="20" id="MUi-rj-5YP"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="UK5-Ic-ASd" secondAttribute="trailing" constant="280" id="Q4W-LO-Pmt"/>
+                <constraint firstItem="ydO-o8-1p4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="RC7-sZ-xY6"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="zEe-kb-KHr" secondAttribute="trailing" constant="20" id="TT2-mb-Ym5"/>
+                <constraint firstItem="UK5-Ic-ASd" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="Vmx-T1-SNb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="NKh-L0-2hI" secondAttribute="trailing" constant="20" id="ZVF-DN-62m"/>
+                <constraint firstItem="UK5-Ic-ASd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="bps-Xs-WNm"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="TA9-Ij-TDe" secondAttribute="trailing" constant="20" id="diM-wN-HoO"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ydO-o8-1p4" secondAttribute="trailing" constant="20" id="fup-lH-VHa"/>
+                <constraint firstItem="NKh-L0-2hI" firstAttribute="top" secondItem="UK5-Ic-ASd" secondAttribute="top" id="gUM-FW-ev7"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="gdz-AP-NFj" secondAttribute="trailing" constant="20" id="iZe-vb-TKa"/>
+                <constraint firstItem="rmE-Jk-8rR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="j8x-pb-5SJ"/>
+                <constraint firstItem="TA9-Ij-TDe" firstAttribute="top" secondItem="zEe-kb-KHr" secondAttribute="bottom" constant="8" id="jRQ-pU-dYw"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ydO-o8-1p4" secondAttribute="bottom" constant="100" id="o7t-Sx-5h7"/>
+                <constraint firstItem="rmE-Jk-8rR" firstAttribute="top" secondItem="UK5-Ic-ASd" secondAttribute="bottom" constant="20" id="qZq-GJ-qq9"/>
+                <constraint firstItem="ydO-o8-1p4" firstAttribute="top" secondItem="rmE-Jk-8rR" secondAttribute="bottom" constant="8" id="sbG-AB-wpH"/>
+                <constraint firstItem="Mgt-ez-40P" firstAttribute="leading" secondItem="UK5-Ic-ASd" secondAttribute="trailing" constant="20" id="sjT-UJ-Xa0"/>
+                <constraint firstItem="zEe-kb-KHr" firstAttribute="top" secondItem="Mgt-ez-40P" secondAttribute="bottom" constant="30" id="ziE-js-TCe"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="60.9375"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

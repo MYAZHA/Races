@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "michael_phelps_hero_custom-a2927b2bfd85b9bd44f0c5d522efe1589bd09310.jpeg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

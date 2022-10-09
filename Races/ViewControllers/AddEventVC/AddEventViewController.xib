@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddEventViewController" customModule="Races" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonSendForm" destination="tVQ-Le-gG4" id="CtL-9Q-Oiv"/>
+                <outlet property="collectionView" destination="Je1-YG-0T3" id="08F-os-A9V"/>
+                <outlet property="linkTextField" destination="3sc-jD-szs" id="FMP-aa-VAi"/>
+                <outlet property="nameTextField" destination="crR-3j-nvn" id="Zf7-9r-Bxs"/>
+                <outlet property="textView" destination="LKr-Yn-f9n" id="u73-Tl-Pfa"/>
+                <outlet property="view" destination="iN0-l3-epB" id="mp8-fw-Dl4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Мы пропустили старт?" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSc-fA-uOC">
+                    <rect key="frame" x="40" y="54" width="334" height="32"/>
+                    <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="32"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Расскажите о нём, заполнив форму, и мы обязательно его добавим!" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ei-Fd-nnk">
+                    <rect key="frame" x="40" y="94" width="334" height="56"/>
+                    <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="28"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Название старта:" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sg2-KN-LYA">
+                    <rect key="frame" x="20" y="170" width="374" height="26"/>
+                    <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="26"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выберите категорию:" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEh-FH-08h">
+                    <rect key="frame" x="20" y="258" width="374" height="26"/>
+                    <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="26"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Опишите мероприятие:" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Xh-VV-pcv">
+                    <rect key="frame" x="20" y="392" width="374" height="26"/>
+                    <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="26"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите название старта" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="crR-3j-nvn">
+                    <rect key="frame" x="20" y="204" width="374" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Je1-YG-0T3">
+                    <rect key="frame" x="20" y="292" width="374" height="80"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="X8Z-FZ-Y5X"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="1Ri-if-59a">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LKr-Yn-f9n">
+                    <rect key="frame" x="20" y="426" width="374" height="125"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="125" id="Fiq-Ho-jdu"/>
+                    </constraints>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tVQ-Le-gG4">
+                    <rect key="frame" x="40" y="659" width="334" height="50"/>
+                    <color key="backgroundColor" systemColor="labelColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Gzh-TV-U8l"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Отправить форму"/>
+                    <connections>
+                        <action selector="buttonSendFormDidTab" destination="-1" eventType="touchUpInside" id="YLd-X5-PqI"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ссылка на мероприятие:" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ioa-hV-luV">
+                    <rect key="frame" x="20" y="571" width="208.5" height="26"/>
+                    <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="26"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Вставьте ссылку" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3sc-jD-szs">
+                    <rect key="frame" x="20" y="605" width="374" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" textContentType="email"/>
+                </textField>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Je1-YG-0T3" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="0nj-ck-CNQ"/>
+                <constraint firstItem="tVQ-Le-gG4" firstAttribute="top" secondItem="3sc-jD-szs" secondAttribute="bottom" constant="20" id="3C3-aH-l1O"/>
+                <constraint firstItem="crR-3j-nvn" firstAttribute="top" secondItem="Sg2-KN-LYA" secondAttribute="bottom" constant="8" id="5j4-vS-RQj"/>
+                <constraint firstItem="lSc-fA-uOC" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="6QE-zM-yQn"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="7ei-Fd-nnk" secondAttribute="trailing" constant="40" id="8ag-jx-Pcr"/>
+                <constraint firstItem="7Xh-VV-pcv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="8gz-fr-dMo"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="7Xh-VV-pcv" secondAttribute="trailing" constant="20" id="9GM-3U-2ca"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="crR-3j-nvn" secondAttribute="trailing" constant="20" id="Cx3-Sk-0UH"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="lSc-fA-uOC" secondAttribute="trailing" constant="40" id="FZP-kN-uOd"/>
+                <constraint firstItem="Sg2-KN-LYA" firstAttribute="top" secondItem="7ei-Fd-nnk" secondAttribute="bottom" constant="20" id="GHl-jV-zrA"/>
+                <constraint firstItem="7ei-Fd-nnk" firstAttribute="top" secondItem="lSc-fA-uOC" secondAttribute="bottom" constant="8" id="L7C-rI-7SI"/>
+                <constraint firstItem="FEh-FH-08h" firstAttribute="top" secondItem="crR-3j-nvn" secondAttribute="bottom" constant="20" id="LKP-hV-cY8"/>
+                <constraint firstItem="Sg2-KN-LYA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="MvH-YJ-jf6"/>
+                <constraint firstItem="3sc-jD-szs" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="P88-jm-Jt1"/>
+                <constraint firstItem="LKr-Yn-f9n" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Q0R-PA-u76"/>
+                <constraint firstItem="FEh-FH-08h" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="R0H-qd-w90"/>
+                <constraint firstItem="3sc-jD-szs" firstAttribute="top" secondItem="Ioa-hV-luV" secondAttribute="bottom" constant="8" id="RSn-Ub-GWx"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="3sc-jD-szs" secondAttribute="trailing" constant="20" id="TXu-U4-R2U"/>
+                <constraint firstItem="7ei-Fd-nnk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="Zdx-PV-zvI"/>
+                <constraint firstItem="tVQ-Le-gG4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="bqh-hz-eys"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Sg2-KN-LYA" secondAttribute="trailing" constant="20" id="cvK-tw-a7t"/>
+                <constraint firstItem="LKr-Yn-f9n" firstAttribute="top" secondItem="7Xh-VV-pcv" secondAttribute="bottom" constant="8" id="elg-W8-VYJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="FEh-FH-08h" secondAttribute="trailing" constant="20" id="g4c-zP-oyK"/>
+                <constraint firstItem="crR-3j-nvn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="gPR-xA-JMX"/>
+                <constraint firstItem="Je1-YG-0T3" firstAttribute="top" secondItem="FEh-FH-08h" secondAttribute="bottom" constant="8" id="jIa-LS-jwm"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Je1-YG-0T3" secondAttribute="trailing" constant="20" id="m7z-OQ-gxV"/>
+                <constraint firstItem="Ioa-hV-luV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="mOB-7q-gUB"/>
+                <constraint firstItem="7Xh-VV-pcv" firstAttribute="top" secondItem="Je1-YG-0T3" secondAttribute="bottom" constant="20" id="oHX-8Y-78W"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="LKr-Yn-f9n" secondAttribute="trailing" constant="20" id="ogY-se-8Ln"/>
+                <constraint firstItem="Ioa-hV-luV" firstAttribute="top" secondItem="LKr-Yn-f9n" secondAttribute="bottom" constant="20" id="sgu-Ji-KCJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="tVQ-Le-gG4" secondAttribute="trailing" constant="40" id="u6z-r5-sJz"/>
+                <constraint firstItem="lSc-fA-uOC" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="yxS-Kv-pqx"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="96"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
