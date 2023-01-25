@@ -1,5 +1,4 @@
 # Races 
-
 this application is a poster of sports events. The application is aimed at amateur athletes who take part in amateur competitions.
 
 
